@@ -1,6 +1,12 @@
 import $ from 'jquery';
 
 export function indexHelper() {
-	// console.log($('#search_form input').val());
-	return('aruba');
+	$.urlParam = (country) => {
+		var results = new RegExp('[\?&]' + country + '=([^&#]*)').exec(window.location.href);
+		return results[1] || 0;
+	}
+	
+	$('input[type=text]').attr('value', $.urlParam('country'));
+
+	return($.urlParam('country'));
 }
