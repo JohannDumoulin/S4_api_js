@@ -5,16 +5,19 @@
     <title>Country Api</title>
 </head>
 <body>
-	<div class="background js-background"></div>
+	<h1>Country API</h1>
+	<div class="background">
+		<h2 class="js_country_name country_name"></h2>
+	</div>
+	<div class="background front js-background">
+		<h2 class="js_country_name country_name"></h2>
+	</div>
 	<form id="search_form" action="index.html" method="GET">
-		<input type="text" name="country" value="">
+		<input type="text" name="country" value="" placeholder="Search Country">
 		<input type="submit" value="Search">
 	</form>
-	<div class="country">
-		<p class="country_name"></p>
-		<p class="country_capital"></p>
-		<p class="joke"></p>
-	</div>
+	
+	<h3 class="js_country_capital"></h3>
 	
 </body>
 </html>

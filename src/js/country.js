@@ -20,8 +20,8 @@ export default class Country {
 
 	initEls () {
 		this.$els = {
-			country: $('.country_name'),
-			capital: $('.country_capital')
+			country: $('.js_country_name'),
+			capital: $('.js_country_capital')
 		}
 	}
 	initEvents(country) {

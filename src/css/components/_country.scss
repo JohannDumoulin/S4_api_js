@@ -1,11 +1,16 @@
-.country {
-  font-size: 42px;
-  color: white;
-  text-shadow: 1px 1px 10px black;
-  text-align: center;
+.country_name {
+  font-size: 60px;
+  transform: translateY(-70%) translateX(5%);
+  text-align: right;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+}
 
-  .country_capital {
-  	font-size: 25px;
-  	margin-top: 20px;
-  }
+.background.front {
+	overflow: hidden;
+
+	.country_name {
+	  color: white;
+	}
 }
