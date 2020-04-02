@@ -14,3 +14,36 @@
 	  color: white;
 	}
 }
+
+#infos {
+    position: absolute;
+    right: 10%;
+    top: 30%;
+
+    div {
+    	display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-bottom: 25px;
+
+    	p {
+    		font-size: 25px;
+    	}
+
+    	img {
+    		height: 50px;
+    		margin-left: 25px;
+    	}
+
+    	&:last-of-type {
+    		margin-bottom: 0;
+    	}
+    }
+
+    .flag_container {
+    	#flag {
+    		height: 50px;
+    	}
+    }
+}
+
