@@ -6,7 +6,33 @@ body {
   }
 
   form {
-    text-align: center;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      outline: 0;
+
+      &[type="text"] {
+        height: 50px;
+        font-size: 20px;
+        padding: 0 20px;
+        border-radius: 50px;
+        border: 1px solid $color-second;
+        background-color: white;
+        font-family: $font-main;
+      }
+
+      &[type="submit"] {
+        background-image: url("../../src/img/search.svg");
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border: none;
+        margin-left: -40px;
+      }
+    }
   }
 }

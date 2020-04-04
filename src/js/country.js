@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import {getCountryHelper} from './helpers/countryHelper';
 import Background from './background';
 
 /*
@@ -35,7 +34,7 @@ export default class Country {
 
 	getCountry(country) {
 		const api = {
-			endpoint: 'https://restcountries.eu/rest/v2/name/'+country,
+			endpoint: `https://restcountries.eu/rest/v2/name/${country}?fullText=true`,
 		};
 
 		$.ajaxSetup({cache: false});
@@ -64,7 +63,7 @@ export default class Country {
 		new Background(capital);
 		this.$els.flag.prepend(`<img id="flag" src="${flag}" alt="Flag of ${country}">`);
 		this.$els.population.prepend(`<p>${population}</p>`);
-		this.$els.region.prepend(`<p>${region}</p>`);
+		this.$els.region.prepend(`<p>${region}</p> <img src="src/img/continents/${region}.svg" alt="">`);
 		this.$els.currency.prepend(`<p>${currency}</p>`);
 		this.$els.language.prepend(`<p>${language}</p>`);
 	}
