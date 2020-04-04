@@ -6,7 +6,5 @@ export function indexHelper() {
 		return results[1] || 0;
 	}
 	
-	$('input[type=text]').attr('value', $.urlParam('country'));
-
 	return($.urlParam('country'));
 }

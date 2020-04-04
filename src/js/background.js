@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import Quote from './quote';
 
 /*
 * Objectif : récupérer une image aléatoire à partir d'une API et l'afficher

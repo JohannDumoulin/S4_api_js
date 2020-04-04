@@ -7,11 +7,15 @@
   right: 0;
 }
 
-.background.front {
-	overflow: hidden;
+.background {
+	height: 400px;
 
-	.country_name {
-	  color: white;
+	&.front {
+		overflow: hidden;
+
+		.country_name {
+		  	color: white;
+		}
 	}
 }
 
@@ -42,7 +46,7 @@
 
     .flag_container {
     	#flag {
-    		height: 50px;
+    		height: 40px;
     	}
     }
 }

@@ -2,13 +2,12 @@ import $ from 'jquery';
 import Background from './background';
 
 /*
-* Objectif : déterminer un "salut" en fonction de l'heure et l'afficher
+* Objectif : Récupérer des données sur un pays et les afficher
 *
 * Étapes :
 * 1- Créer une référence vers les éléments du DOM qu'on va utiliser
-* 2- Récuperer une salutation en fonction de l'heure
-* 3- Récuperer une valeur aléatoire à partir d'un tableau
-* 4- Afficher le résultat
+* 2- Récuperer les données d'un pays
+* 3- Afficher le résultat
 * */
 
 export default class Country {
